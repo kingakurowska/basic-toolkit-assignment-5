@@ -40,7 +40,7 @@ git add file.py
 git commit -m "my first commit"
 git push origin main
 ```
-tracking *all files in the directory at once:
+tracking all files in the directory at once:
 ```
 git add .
 ```
@@ -50,35 +50,40 @@ If you accidentally mistype a commit message, you can change it using the ```--a
 
 ### Branching and merging
 
-Createing new branch
+Branches allows to develop features, fix bugs, or safely experiment with new ideas in a contained area of repository.
+
+Createing new branch:
 
 ```
 git branch new_branch
 ```
 
-Changing working branch to the "new_branch"
+Changing working branch to the "new_branch":
 
 ```
 git checkout new_branch
 ```
 
-Comparing the 2 branches
+Comparing the 2 branches:
 
 ```
 git diff main..new_branch
 ```
 
-Merging the branch to main
+Merging the branch to main:
 
 ```
- git merge new_branch
- git push
- ```
+git merge new_branch
+git push
+```
+
+show the commit history for the currently active branch:
+```
+git log
+```
 
 **In case of merging conflict:**
-```
-git log --merge
-```
+
 Edit the file deleting unwanted lines and commit
 
 ----------------
